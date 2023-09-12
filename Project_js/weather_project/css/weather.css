@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/pexels-eberhard-grossgasteiger-844297.jpg);
+  background-size: 100vw;
+}
+
+#container {
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  margin: 15vh auto;
+  width: 60vw;
+  height: auto;
+  text-align: center;
+  background-color: rgba(173, 216, 230, 0.777);
+  border-radius: 22px;
+}
+
+#searchLabel {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#searchInput {
+  background-color: rgba(0, 0, 128, 0.496);
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  height: 33px;
+  margin: 5px;
+  border: none;
+}
+
+#searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.751);
+  padding: 5px;
+}
+
+#searchBtn {
+  height: 33px;
+  margin: 5px;
+  color: rgb(118, 164, 250);
+  border: none;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+#searchDiv {
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+}
+
+#popup {
+  display: none;
+  width: 35vw;
+  height: 25vh;
+  background-color: #ffffff64;
+  margin-left: 12.5vw;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 7px;
+  line-height: 3;
+  margin-top: 15px;
+}
+
+#resolteDiv {
+  margin-top: 30px;
+  font-size: 1.4rem;
+}
+
+#imageDiv {
+  height: 13vh;
+  line-height: 1;
+}
+
+#weatherDiv {
+  margin-top: 0;
+  line-height: 0.5;
+}
+
+#temp {
+  font-size: 4rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#extra {
+  background-color: rgba(0, 0, 128, 0.511);
+  border-radius: 5px;
+  width: 25%;
+  margin-left: 22.5vw;
+}
+
+@media (max-width: 550px) {
+  #container {
+    width: 90vw;
+    height: 80vh;
+  }
+
+  #weatherDiv {
+    font-size: 1rem;
+  }
+
+  #searchDiv {
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2;
+  }
+
+  #searchBtn {
+    width: 25%;
+    margin-left: 33vw;
+  }
+
+  #resolteDiv {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+
+  #extra {
+    width: 60%;
+    padding: 5px;
+    margin-left: 19vw;
+  }
+}
